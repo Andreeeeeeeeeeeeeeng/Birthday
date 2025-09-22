@@ -1,0 +1,851 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Hi Tenio HEHEHE</title>
+
+</head>
+<meta name="viewport" content="width=device-width, initial scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/5/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+
+  
+<div class="Header">
+<h1><center> HAPPY BIRTHDAY</center><center>TENIOOOOOO!!</center></h1>
+<p><center>HEHEHEHEHE </center> </p>
+</div>
+
+<div class="gallery">
+    <img src="crown tenio.png" class="Tenio1" width="600px" height ="300px"alt="HEHE1" data-message="GAGABE"onclick="pauseMusic()">
+    <img src="dogtenio.png" class="Tenio2" alt="HEHE2" data-message="HEHE">
+    <img src="tenio3.png" class="Tenio3" width="600" height="200"alt="HEHE3" data-message="JONH PAUL asda">
+    <img src="1234.png" class="Tenio4" width="800px" height="400px"  alt="HEHE3" data-message="gegeSgegegegeg">
+    <img src="tenio6.png"  class="Tenio6" width="500" height="65"  alt="HEHE3" data-message="JONH PAUL asda">
+    <img src="tenimountain.jpg" class="Tenio7" width="500" height="65"  alt="HEHE3" data-message="JONH PAUL asda">
+    <img src="tenio8.jpg" class="Tenio8" width="500" height="65"  alt="HEHE3" data-message="JONH PAUL asda">
+</div>
+
+<div id="clickBubble" class="popup-bubble">
+  <button id="closeBubble">✖</button>
+  <p id="bubbleText" class="typewriter"></p>
+</div>
+
+
+<div id="clickBubble" class="popup-bubble" >
+<button id ="closeBubble">✖</button>
+<p id="bubbleText"></p>
+</div>
+
+
+
+ 
+
+<style>
+.typewriter {
+  display: inline-block;
+  border-right: 2px solid white; /* cursor */
+  white-space: nowrap;
+  overflow: hidden;
+  animation: blink 0.8s infinite;
+}
+
+
+
+
+
+.popup-bubble{
+  position: fixed;
+  top: 20%;
+  left: 50%;
+  transform: translateX(-50%) scale(0.85); 
+  width: 50%;
+  background: #d40797;
+  color: #1a0215;
+  padding: 20px;
+  border-radius: 20px;
+  font-weight: bold;
+  font-size: 1.5rem;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.3);
+  text-align: center;
+  z-index: 10000;
+  opacity: 0;           
+  visibility: hidden;        
+  pointer-events: none;     
+  transition: opacity 0.4s ease, transform 0.4s ease, visibility 0.4s;
+}
+
+
+.popup-bubble.show{
+  opacity:1;
+  transform:translateX(-50%) scale(1);
+  visibility: visible;
+  pointer-events:auto;
+  
+}
+
+
+
+#closeBubble{
+  position:absolute;
+  top:10px;
+  right:15px;
+  background:transparent;
+  border: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color:antiquewhite;
+  cursor:pointer;
+
+}
+
+
+@keyframes FadeInScale{
+  from{opacity: 0; transform:translateX(-50%) scale(0.8);}
+  to {opacity: 1; transform:translateX(-50%) scale(1);}
+}
+
+body{background:url("birthday!.jpg");
+    position: relative;
+
+
+}
+
+
+
+.gallery{display:flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px;
+    flex-wrap:wrap;
+    position: relative;
+    z-index: 2;
+    
+
+}
+.gallery img{width: 200px;
+    height:auto;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+    transition: transform 1s ease;
+    
+
+}
+
+.gallery img:hover{transform:scale(1.3) ;
+    box-shadow:10px 10px 10px rgba(229, 58, 6, 0.5);
+    
+   
+    
+
+}
+
+body {background-image: url('birthday!.jpg'); 
+
+}  
+.Tenio1{position:absolute; top: 200px; left: -10px;
+    width: 150px;
+
+}
+.Tenio2{position:absolute; top: 40px; right: -10px;
+    width: 150px;
+}
+.Tenio3{position:absolute; top: 515px; right: -10px;
+    width: 150px;
+    
+    
+}
+@keyframes popout {
+  0%{
+  opacity:0;
+  transform:scale(0);
+
+
+}
+ 70%{
+  opacity: 1;
+  transform: scale(1.2)
+
+}
+ 100%{
+  opacity: 1;
+  transform: scale(1)
+ }
+
+}
+
+
+
+.Tenio4{
+  position:absolute; 
+  top: 400px; 
+  left: -10px;
+    width: 150px;
+  
+}
+
+
+.Tenio6{position:absolute; top: -180px; left: 400px;
+    width: 150px;
+}
+.Tenio7{position:absolute; bottom:-100px; left: -10px;
+    width: 150px;
+
+}
+
+.Tenio8{position:absolute; bottom: -30px; right: -10px;
+    width: 150px;
+}
+/* div{width:500px;
+    height: 500px;
+    background-color: red;
+    animation-name: Andre;
+    animation-duration:4s;
+
+}
+@keyframes Andre {from{background-color:red} to {background-color: yellow}} */
+
+
+</style>
+</body>
+
+<style>
+.typewriter {
+  display: inline-block;
+  border-right: 2px solid white; /* blinking cursor */
+  white-space: nowrap;
+  overflow: hidden;
+}
+
+@keyframes blink {
+  0% { border-color: transparent; }
+  50% { border-color: white; }
+  100% { border-color: transparent; }
+}
+
+.typewriter {
+  animation: blink 0.8s infinite;
+}
+
+footer{
+        background: linear-gradient(135deg, rgb(208, 12, 12), rgb(223, 63, 89));
+        padding: 60px;
+        text-align: center;
+        color:rgb(225, 231, 232);
+        position:relative;
+        z-index: 1;
+        text-align: center;
+        font-family: 'Comic Sans MS', cursive, sans-serif;
+        border-top-left-radius:30px;
+        border-top-right-radius:30px;
+        box-shadow: 0 -10px 10px rgb(212, 101, 73);
+        
+     
+        
+}
+
+footer{animation: glow 2s infinite alternate;
+
+}
+@keyframes glow{
+    from {box-shadow: 0 -4px 15px rgba(247, 1, 1, 0.3), 0 -4px 25px rgba(255, 255, 255, 0.5),;}
+    to {box-shadow: 0 -4px 15px rgb(255, 200, 200, 0.8), 0 -4px 60px rgba(255, 100, 200, 1);}
+}
+
+footer h2{margin:10px;
+    font-size:18px;
+    text-shadow:2px 2px 6px rgba(0,0,0,0.5)
+
+}
+
+footer p{font-size: 18px;
+        margin: 0;
+
+}
+
+footer .footer-icons{
+    margin-top:15px;
+
+}
+
+footer .footer-icons i { 
+    font-size: 24px;
+    margin: 0 10px;
+    transition: transform 4s ease;
+    cursor: pointer;
+
+}
+
+footer .footer-icons i:hover{
+    transform: scale(1.3);
+    color: rgb(247, 9, 112);
+
+}
+.w3-animate-zoom{animation-duration: 5s;
+
+}
+
+.button{color:rgb(249, 250, 248);
+    font-style: italic;
+
+}
+
+button{background-color: aqua; border: none;
+    text-align: center; text-decoration: solid; margin: 4px 2px; padding: 30px 50px; font-size: 30px;
+
+}
+img{ display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+.center{display: block;
+    margin-left:auto;
+    margin-right:auto;
+
+}
+
+.button1{background-color: rgb(240, 234, 232); border: none;
+    text-align: center; text-decoration: solid; margin: 4px 2px; padding: 30px 50px; font-size: 10px;
+}
+.button1{ position:absolute; top: 20px; right:240px; border-radius:50%; 
+
+}
+
+.button1{color:rgb(222, 16, 64);
+    font-style: italic;
+
+}
+
+.button2, .button3 {
+  position: absolute;
+  top: 80px;
+  border-radius: 50%;      
+  width: 60px;              
+  height: 60px;
+  font-size: 22px;          
+  display: flex;
+  justify-content: center;  
+  align-items: center;      
+  cursor: pointer;
+  
+}
+
+.button3:hover{background-color: rgb(248, 11, 11);
+    color:aqua;
+
+}
+
+.button2:hover{background-color: rgb(248, 11, 11);
+    color:aqua;
+}
+.button2 { right: 340px; }
+.button3 { right: 200px; }
+
+.mirror{
+    transform:scaleY(-1);
+}
+.candle {
+  position: absolute;
+  bottom: -10px;
+  width: 6px;
+  height: 80px;
+  background: linear-gradient(to top, #fff6d9, #ffeebb, #fff);
+  border-radius: 3px;
+  box-shadow: 0 0 15px rgba(255, 230, 100, 0.8);
+  animation: floatCandle 6s linear infinite;
+  z-index: 9999;
+}
+
+/* Flickering flame */
+.candle::before {
+  content: "";
+  position: absolute;
+  top: -18px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 14px;
+  height: 20px;
+  background: radial-gradient(circle, #ffcc66 30%, rgba(255, 204, 102, 0) 70%);
+  border-radius: 50%;
+  animation: flicker 0.15s infinite alternate;
+}
+
+/* Candle floating animation */
+@keyframes floatCandle {
+  0% { transform: translateY(100vh); opacity: 0; }
+  10% { opacity: 1; }
+  90% { opacity: 1; }
+  100% { transform: translateY(-120vh); opacity: 0; }
+}
+
+/* Flame flicker effect */
+@keyframes flicker {
+  0% { transform: translateX(-50%) scale(1); opacity: 0.9; }
+  100% { transform: translateX(-52%) scale(1.1); opacity: 1; }
+}
+
+
+
+</style>
+
+<img src ="Kim2.jpg" alt = "Pokemon"  usemap="#teniomap" width ="1080" height ="645" class="center">
+
+<map name ="teniomap">
+    <area shape="circle" coords="451,165,29"  alt="computer"  href="javascript:void(0);" onclick=" PlayVideo('Vid1.mp4')"></area>
+    <area  shape="circle"coords="606,181,29"    alt="computer" href="javascript:void(0);" onclick=" PlayVideo('Vid1.mp4')"></area>
+    <area  shape="rect" coords="469,316,581,365" alt="computer" href="javascript:void(0);" onclick=" PlayVideo('Vid1.mp4')"></area>
+
+</map>
+
+<video id="VideoPlayer" controls autoplay
+ style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; object-fit:cover; z-index:9999;">
+
+</video>
+
+<script>
+
+
+setInterval(() => {
+  let candle = document.createElement("div");
+  candle.classList.add("candle");
+
+  
+  candle.style.left = Math.random() * 100 + "vw";
+
+ 
+  let size = 40 + Math.random() * 40; 
+  candle.style.height = size + "px";
+
+  document.body.appendChild(candle);
+
+ 
+  setTimeout(() => candle.remove(), 12000);
+}, 1000); 
+
+
+setInterval(() => {
+  let emoji = document.createElement("div");
+  emoji.textContent = "🎉";
+  emoji.style.position = "absolute";
+  emoji.style.left = Math.random() * 100 + "vw";
+  emoji.style.top = "10vh";
+  emoji.style.fontSize = "2rem";
+  emoji.style.animation = "floatUp 5s linear forwards";
+  document.body.appendChild(emoji);
+  setTimeout(() => emoji.remove(), 5000);
+}, 1000);
+
+
+
+
+function typeWriterEffect(element, text, speed = 50){
+  element.textContent = "";
+  let i = 0
+  function type() {
+    if(i<text.length){
+      element.textContent += text.charAt(i);
+      i++;
+      setTimeout(type, speed);
+    }
+  }
+  type();
+}
+  
+  
+//BUBBLE ON EACH PICTURE
+const galleryImgs = document.querySelectorAll(".gallery img");
+const bubble = document.getElementById("clickBubble");
+const bubbleText = document.getElementById("bubbleText");
+const closeBtn = document.getElementById("closeBubble");
+
+galleryImgs.forEach(img => {
+  img.addEventListener("click", () => {
+    const msg = img.getAttribute("data-message"); 
+   typeWriterEffect(bubbleText, msg, 100);
+    void bubble.offsetWidth;
+    bubble.classList.remove("show");
+    bubble.classList.add("show");
+    
+  });
+});
+
+
+closeBtn.addEventListener("click", () => {
+
+  bubble.classList.remove("show");
+
+
+});
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+function PlayVideo(src){ 
+var player = document.getElementById("VideoPlayer");
+player.src = src;
+player.style.display = "block";
+player.Play();
+
+}
+
+</script>   
+
+<audio id="guys"  loop >
+<source src= "guys.mp3" type="audio/mpeg">
+
+</audio>
+
+<script>
+var music = document.getElementById("guys");
+window.addEventListener("load", function(){
+    var playPromise = music.play();
+    
+    
+    
+    if (playPromise !== undefined){
+        playPromise.catch(() => {
+            console.log("Autoplay blocked 😢 — will play on first click.");
+            document.body.addEventListener("click", () =>{
+                music.play();
+             }, {once:true});
+            });
+        }
+    });   
+function pauseMusic(){
+    music.pause();
+}
+           
+    
+
+</script>
+
+<!-- <button class="button1" onclick="getElementById('DitoSakin').play();">MUSIC HERE </button>
+
+<button  class =" button2" id="playbutton" onclick="playMusic()" >▶</button>
+<button  class =" button3" id="pausebutton" onclick = "pauseMusic()">⏸</button> -->
+
+<!-- // var music = document.getElementById("DitoSakin");
+
+// function playMusic(){music.play();
+    
+// }
+
+// function pauseMusic(){music.pause();
+
+// } -->
+
+
+
+<script src= "https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js"></script>
+<script>
+window.onload = function(){
+    confetti({
+        particleCount: 300,
+        spread: 100,
+        origin: {y:0.6}
+
+
+    });
+}
+var duration = 100*1000;
+var end = Date.now() + duration;
+
+(function frame(){
+    confetti({
+    particleCount:5,
+    spread: 55,
+    angle: 60,
+    origin:{x:0}
+});
+confetti({
+    particleCount:5,
+    spread: 55,
+    angle: 120,
+    origin:{x:1}
+});
+
+if (Date.now()<end){
+    requestAnimationFrame(frame)}
+}());
+
+</script>
+
+
+
+
+<style>
+.in-line{display: inline-block; margin: 0 100px;
+
+}
+#Box1{display: inline-block; margin:0 400px;
+
+}
+#Box2{display: inline-block; margin: 0 100px;
+}
+
+</style>
+
+<div class="w3-container w3-center w3-animate-zoom">
+    <footer >
+        <h2>THANK YOU FOR EVERYTHING!</h2>
+        <p>MADE WITH SWEAT AND TEARS AND TIME, JOKE HAHA</p>
+        <div class="footer-icons">
+        <i class = "fa fa-heart"></i>
+        <i class = "fa fa-birthday-cake"></i>
+        <i class = "fa fa-heart"></i>   
+        </div>
+    </footer>
+</div>
+
+<div class="chibi-parade">
+
+  <div class="chibi c1">
+   
+    <img src="chibi1.png" alt="Chibi 1" >
+    <div class="bubble">Happsy Birthday!</div>
+  </div>
+
+  
+
+
+  <div class="chibi c3">
+    <img src="sv1.png" alt="Chibi 2" id="a" >
+    <div class="bubble">bembang</div>
+  </div>
+
+  <div class="chibi c4">
+    <img src="sv2.png" alt="Chibi 3">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c5">
+    <img src="sv33.png" alt="Chibi 4">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c6">
+    <img src="sv4.png" alt="Chibi 5">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c7">
+    <img src="sv5.png" alt="Chibi 6">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c8">
+    <img src="sv6.png" alt="Chibi 7">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c9">
+    <img src="sv7.png" alt="Chibi 8">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c10">
+    <img src="sv8.png" alt="Chibi 9">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c11">
+    <img src="sv9.png" alt="Chibi 10">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c12">
+    <img src="sv10.png" alt="Chibi 11">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c13">
+    <img src="sv11.png" alt="Chibi 12">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c14">
+    <img src="sv12.png" alt="Chibi 13">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+  <div class="chibi c15">
+    <img src="sv13.png" alt="Chibi 14">
+    <div class="bubble">Happy Birthday!</div>
+  </div>
+
+
+</div>
+
+
+
+<style>
+
+
+
+.chibi-parade{
+  position: absolute;              
+  left: -40vw;                  
+  bottom: 200px;                
+  display: flex; 
+  gap: 24px;                    
+  z-index: 9998;               
+  animation: parade 30s linear infinite;
+}
+
+@keyframes parade{
+  from { transform: translateX(120vw); }
+  to   { transform: translateX(-100vw); }  
+}
+
+.chibi{
+  position: relative;
+}
+
+.chibi.c3, 
+.chibi.c4, 
+.chibi.c5, 
+.chibi.c6, 
+.chibi.c7, 
+.chibi.c8, 
+.chibi.c9, 
+.chibi.c10, 
+.chibi.c11, 
+.chibi.c12, 
+.chibi.c13, 
+.chibi.c14,
+.chibi.c15 {
+  margin-top: 80px;
+}
+.chibi img{
+  width: 140px;                 
+  height: auto;
+  filter: drop-shadow(0 8px 10px rgba(0,0,0,0.35));
+  animation: bob 0.6s steps(2, end) infinite alternate; 
+  image-rendering: auto;
+}
+
+
+
+
+.chibi img.needs-mask{
+  border-radius: 50%;
+  
+
+  -webkit-mask-image: radial-gradient(circle at 50% 45%, #000 36%, transparent 37%);
+  mask-image: radial-gradient(circle at 50% 45%, #000 36%, transparent 37%);
+  background: transparent;
+}
+
+@keyframes bob{
+  0%   { transform: translateY(0) rotate(-2deg); }
+  100% { transform: translateY(-8px) rotate(2deg); }
+}
+
+
+.bubble{
+  position: absolute;
+  bottom: 110%;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #eae6e6;
+  color: #c90ca0;
+  padding: 6px 10px;
+  border-radius: 16px;
+  font-weight: 800;
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+  animation: say 1.6s ease-in-out infinite;
+  font: bold;
+}
+
+.bubble::after{
+  content: "";
+  position: absolute;
+  bottom: -6px;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 6px;
+  border-style: solid;
+  border-color: #fff transparent transparent transparent;
+}
+
+@keyframes say{
+  0%,100% { transform: translate(-50%, 0) scale(1);    opacity: 1; }
+  50%     { transform: translate(-50%,-6px) scale(1.05); opacity: 0.95; }
+}
+
+.balloon{position: absolute;
+  width:-100px;
+  bottom: 10px;
+  animation:floatUp 5s linear infinite;
+  opacity:0.8s;
+}
+
+@keyframes floatUp{
+  0%{transform: translateY(0) scale(1); opacity:1;}
+ 100%{transform: translateY(-120vh) scale(1.2); opacity:0;}
+}
+
+/* header glowing style */
+.Header h1{
+  font-size:3rem;
+  text-shadow: rgb(247, 9, 112), palevioletred, violet;
+  animation: glowText 2s ease-in-out infinite alternate;
+
+}
+
+@keyframes glowText{
+  from{text-shadow: rgb(232, 70, 207);}
+  to {text-shadow: rgb(160, 20, 44)}
+} 
+.stars{
+  position:absolute;
+  width:2px;
+  height:3px;
+  background:#c90ca0;
+  border-radius: 50%;
+  animation: twinkle 2s infinite alternate;
+}
+
+@keyframes twinkle{
+  from {opacity:0.3;}
+  to {opacity:1;}
+}
+</style>
+
+<!-- star  -->
+<div class="stars" style="top:20%; left:30%;"></div>
+<div class="stars" style="top:50%; left:60%;"></div>
+<div class="stars" style="top:80%; left:10%;"></div>
+
+
+
+
+
+<!-- 
+// BALLOON-->
+
+<img src = "balloon1.png" class="balloon" style="left:20%; width:100px; height:100px;"/>
+<img src = "balloon2.png" class="balloon" style="left:30%; width:100px; height:100px; animation-delay:1s;"/>
+<img src = "balloon3.png" class="balloon" style="left:40%;width:100px; height:100px; animation-delay:2s;"/>
+<img src = "balloon4.png" class="balloon" style="left:50%; width:100px; height:100px; animation-delay:3s;"/>
+<img src = "balloon.png" class="balloon" style="left:60%;width:100px; height:100px; animation-delay:4s;"/>
+<img src = "balloon5.png" class="balloon" style="left:70%;width:100px; height:100px; animation-delay:5s;"/>
+<img src = "balloon6.png" class="balloon" style="right:20%;width:100px; height:100px; animation-delay:6s;"/>
+<img src = "balloon7.png" class="balloon" style="right:30%;width:100px; height:100px; animation-delay:7s;"/>
+<img src = "balloon8.png" class="balloon" style="right:10%;width:100px; height:100px; animation-delay:8s;"/>
+<img src = "balloon8.png" class="balloon" style="right:10%;width:100px; height:100px; animation-delay:8s;"/>
+
+
